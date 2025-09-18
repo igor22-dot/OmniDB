@@ -17,9 +17,7 @@ USER omnidb:omnidb
 ENV HOME /home/omnidb
 WORKDIR ${HOME}
 
-RUN wget https://github.com/OmniDB/OmniDB/archive/${OMNIDB_VERSION}.tar.gz \
-    && tar -xvzf ${OMNIDB_VERSION}.tar.gz \
-    && mv OmniDB-${OMNIDB_VERSION} OmniDB
+COPY . ${HOME}/OmniDB
 
 WORKDIR ${HOME}/OmniDB
 
