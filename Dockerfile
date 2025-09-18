@@ -36,4 +36,4 @@ RUN python omnidb-server.py --init \
 
 # 9. EXPOR A PORTA E DEFINIR O COMANDO DE INICIALIZAÇÃO
 EXPOSE 8000
-CMD ["python", "omnidb-server.py"]```
+CMD ["python", "omnidb-server.py"]
